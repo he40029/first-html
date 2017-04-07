@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>РосКвартал</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script src="jquery-2.0.0.js"> </script>
+	<script src="initTest.js"></script>
+</head>
+<body>
+	<!--*******************header*********************-->
+	<header>
+		<div class="row-1">
+			<div class="main">
+				<div id="nav1">
+					<ul class="menu1">
+						<li><img src="images/logo.png" /></a></li>
+						<li><a href="#">Школа ЖКХ</a></li>
+					</ul>
+				</div>
+				<div id="tel">8-800-555-0505</div>
+				<div id="nav">
+					<ul class="menu">
+						<li><a class="active" href="index.html">КУРСЫ</a></li>
+						<li><a href="#">УЧАЩИЕСЯ</a></li>
+						<li><a href="#">ОТЗЫВЫ</a></li>
+						<li><a href="#">ПОДПИСКА</a></li>
+						<li><a href="#">ПРОФИЛЬ</a></li>            
+					</ul>
+				</div>
+			</div>
+			<div class="main1"> 
+				<div id="course"> Курс</div>
+			</div>
+			<div class="main2"> 
+				<div id="course_name"> Бухгалтеру: ведение учета,</br>первичка, проводки</div>
+			</div>
+		</div>
+	</header>
+	<!-- *******************content***********************-->
+	<content >
+		<div class="row-2">
+			<div class="post">
+				<div id="sidebar">
+					<div id="ball">	+100 баллов </div>
+					<div id="info-ball"> Тест считается сданным, если вы не допустили ни одной ошибки.<br>Результаты<br>показываются после окончания теста
+					<br><br> Выш текущий баланс<br>баллов: <b>25000</b></div>
+				</div>
+				<div class="test">
+					<p id="test">Тестирование по курсу</p>
+					<div class="number">
+						<ul>
+							<li>1.</li>
+							<li>2.</li>
+							<li>3.</li>
+							<li>4.</li>
+							<li>5.</li>
+							<li>6.</li>
+							<li>7.</li>
+							<li>8.</li>
+							<li>9.</li>
+							<li>10.</li>
+						</ul>
+					</div>
+					<div class="post-question">
+						<p id="question"></p>
+						<form class="answers-radio" id="options" name="f1">
+							<div>
+								<input id="ans-radio1" type="radio" name="answer" value="1" >
+								<label id="option1" for="option1"></label> 
+							</div>
+							<div>
+								<input id="ans-radio2" type="radio" name="answer" value="2">
+								<label id="option2" for="option2"></label>
+							</div>
+							<div>
+								<input id="ans-radio3" type="radio" name="answer" value="3"  >
+								<label id="option3" for="option3"></label>						
+							</div>
+						</form>
+						<button onclick="check()" class="myButton" id="next"><img name="img-button1" src="images/test/next.png">Следующий</button>
+						<button onclick="checkrepeat()" class="myButton" id="repeat"><img name="img-button2" src="images/test/repeat.png">Начать заново</button>
+						<span class="real-show-hint" id="show-hint" data-hint="#real-hint-1" >Подсказка</span>
+
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</content>
+<!--*****************footer*******************-->
+	<footer>
+		<div class="row-3">
+			<div class="container1">
+				<div class="wrapper">
+				<div id="line"> </div>
+					<div class="grid1"> 
+						<a href="#"><img src="images/logo.png" ></a>
+					</div>
+					<div class="grid1">
+						<div class="name-title"><a href="#">Компанию</a></div>
+						<div class="name-subtitle"><a href="#">О нас</a></div>
+						<div class="name-subtitle"><a href="#">Команда</a></div>
+						<div class="name-subtitle"><a href="#">Работа у нас</a></div>
+						<div class="name-subtitle"><a href="#">Официальные документы</a></div>
+					</div>
+					<div class="grid1"> 
+						<div class="name-title"><a href="#">Услуги</a></div>
+						<div class="name-subtitle"><a href="#">ГИС ЖКХ</a></div>
+						<div class="name-subtitle"><a href="#">Юридическая поддержка</a></div>
+						<div class="name-subtitle"><a href="#">Сайт для УК</a></div>
+						<div class="name-subtitle"><a href="#">Обучение</a></div>
+						<div class="name-subtitle"><a href="#">Лицензирование УК</a></div>
+					</div>
+					<div class="grid1" id="grid1-id"> 
+						<div class="name-title"><a href="#">Блог</a></div>
+						<div class="name-subtitle"><a href="#">Свежие статьи</a></div>
+						<div class="name-subtitle"><a href="#">ГИС ЖКХ</a></div>
+						<div class="name-subtitle"><a href="#">Раскрытие информации</a></div>
+						<div class="name-subtitle"><a href="#">Лицензирование</a></div>
+						<div class="name-subtitle"><a href="#">Вебинары</a></div>						
+					</div>
+				</div>
+			</div>
+			
+			<div class="container2">
+				<div class="wrapper">
+					<div class="grid"> 
+						<ul class="social">
+                        	<li><a href="#"><img src="images/footer/vk.png" ></a></li>
+                            <li><a href="#"> <img src="images/footer/f.png" ></a></li>
+                            <li><a href="#"><img src="images/footer/u.png" ></a></li>
+                            <li><a href="#"><img src="images/footer/i.png"></a></li>
+                        </ul>
+					</div>
+					<div class="grid"> 
+						<div class="mail"> 
+							Наша почта:<br><strong><b>mail@roskvartal.ru</b></strong>
+						</div>
+					</div>
+					<div class="grid"> 
+						<div class="tel1"> Бесплатный звонок по всей<br> территории России</div>
+					</div>
+					<div class="grid">
+						<div class="number-tel">8-800-555-0505 </div>
+					</div>
+					<div class="grid">
+						<button onclick="" class="tell">Заказать звонок</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<div id="real-hint-1" class="real-hint">
+		<div class="prm-cross">Скрыть</div>
+		<div id="hint-text"> подсказка</div>
+	</div>
+<script >
+	var countQuest = 0;
+	var otvet=[];
+	var elementChildren = document.querySelector(".number ul").children;
+	var child=elementChildren[countQuest];
+	//массив вопросов
+	var questions = ["Бухгалтерию можно сравнить с нервной системой человека. Она<br>фиксирует все, что происходит внутри его организма. Затем, собрав<br>информацию, она принимает решения и правляет каждым движением<br>тела. Бухучет должен делать то же самое! Только внутри организма<br>предприятия. На предприятие могут свалиться разные раздражители.<br>Но только некоторые из них задевают нервы бухгалтерского учета и<br>заставляют его фиксировать, грппировать и передавать дальше<br>информацию.",
+		"Бухгалтерию можно сравнить с нервной системой человека. Она<br>фиксирует все, что происходит внутри его организма. Затем, собрав<br>информацию, она принимает решения и правляет каждым движением<br>тела. Бухучет должен делать то же самое! Только внутри организма<br>предприятия. На предприятие могут свалиться разные раздражители.<br>Но только некоторые из них задевают нервы бухгалтерского учета и<br>заставляют его фиксировать, грппировать и передавать дальше<br>информацию.",
+			"","Бухгалтерию можно сравнить с нервной системой человека. Она<br>фиксирует все, что происходит внутри его организма. Затем, собрав<br>информацию, она принимает решения и правляет каждым движением<br>тела. Бухучет должен делать то же самое! Только внутри организма<br>предприятия. На предприятие могут свалиться разные раздражители.<br>Но только некоторые из них задевают нервы бухгалтерского учета и<br>заставляют его фиксировать, грппировать и передавать дальше<br>информацию.",
+				"Вопрос 5. правильный ответ 4","Вопрос 6. правильный ответ 4","Вопрос 7. правильный ответ 4","Вопрос 8. правильный ответ 4","Вопрос 9. правильный ответ 4","Вопрос 10. правильный ответ 4"];
+	//Массив подсказок
+	var hint = ["Бухгалтерию можно сравнить с нервной системой человека.<br>Она фиксирует все, что происходит внутри его организма.<br>Затем, собрав информацию, она принимает решения и правляет каждым движением тела. Бухучет должен делать<br>то же самое! Только внутри организма предприятия.<br>На предприятие могут свалиться разные раздражители.",
+	"какой-то текст1","какой-то текст3","какой-то текст4","какой-то текст5","какой-то текст6","какой-то текст7","какой-то текст8","какой-то текст9","какой-то текст10"];
+	//Массивы вариантов ответов
+    var number1 = ["Да, конечно","","Бухгалтерию можно сравнить с нервной системой человека. Она<br>фиксирует все, что происходит внутри его организма. Затем,<br>собрав информацию, она принимает решения и правляет каждым<br>движением тела.",
+		"Ответ21","Ответ31","Ответ21","Ответ31","Ответ21","Ответ31","Ответ21"];    
+    var number2 = ["Нет, разумеется","","Бухгалтерию можно сравнить с нервной системой человека. Она<br>фиксирует все, что происходит внутри его организма. Затем,<br>собрав информацию, она принимает решения и правляет каждым<br>движением тела.",
+		"Ответ22","Ответ32","Ответ22","Ответ32","Ответ22","Ответ32","Ответ22"];    
+    var number3 = ["Вы о чем?","","Бухгалтерию можно сравнить с нервной системой человека. Она<br>фиксирует все, что происходит внутри его организма. Затем,<br>собрав информацию, она принимает решения и правляет каждым<br>движением тела.",
+		"Ответ23","Ответ33","Ответ23","Ответ33","Ответ23","Ответ33","Ответ23"];    
+	child.style.background = "#1D7EF6";
+	child.style.color = "#fff";
+	document.f1.answer[0].checked=true;
+	document.getElementById('hint-text').innerHTML = hint[countQuest];	
+
+	initTest(questions[countQuest],number1[countQuest],number2[countQuest],number3[countQuest]);
+
+</script>
+<script>
+function check(){
+if (countQuest<9){
+
+	otvet[countQuest]= $( "input:checked" ).val();
+	child=elementChildren[countQuest];
+	child.style.background = "";
+	child.style.color = "#000";
+	countQuest++;
+	child=elementChildren[countQuest];
+	child.style.background = "#1D7EF6";
+	child.style.color = "#fff";
+
+	document.f1.answer[0].checked=true;
+
+	document.getElementById('question').innerHTML=questions[countQuest];
+
+	document.getElementById('option1').innerHTML=number1[countQuest];
+	document.getElementById('option2').innerHTML=number2[countQuest];
+	document.getElementById('option3').innerHTML=number3[countQuest];	
+
+	document.getElementById('real-hint-1').style.display="none";
+	document.getElementById('hint-text').innerHTML=hint[countQuest];	
+	if (number1[countQuest]){
+		document.getElementById('ans-radio1').style.margin ="";
+		document.getElementById('ans-radio2').style.margin ="";
+		document.getElementById('ans-radio3').style.margin ="";
+	}
+	else {
+		document.getElementById('ans-radio1').style.margin ="0 13% 0 13%";
+		document.getElementById('ans-radio2').style.margin ="0 13% 0 13%";
+		document.getElementById('ans-radio3').style.margin ="0 13% 0 13%";
+	}
+
+} else
+if (countQuest==9){
+	otvet[countQuest]= $( "input:checked" ).val();
+	send(otvet);
+	child=elementChildren[countQuest];
+	child.style.background = "";
+	document.getElementById('show-hint').style.display="none";
+	document.getElementById('real-hint-1').style.display="none";
+ }
+}
+function checkrepeat(){
+	countQuest = 0;
+	otvet=[];
+	initTest(questions[countQuest],number1[countQuest],number2[countQuest],number3[countQuest])	;
+	document.getElementById('hint-text').innerHTML=hint[countQuest];	
+	document.getElementById('real-hint-1').style.display="none";
+	document.getElementById('show-hint').style.display="block";
+
+	child=elementChildren[countQuest];
+	child.style.background = "#1D7EF6";
+	child.style.color = "#fff";
+	child.innerHTML = "1.";
+	for (i=(countQuest+1); i<10;i++) {
+		child=elementChildren[i];
+		child.style.background = "none";
+		child.style.color = "#000";
+		child.innerHTML = i+1+".";
+	}
+	document.f1.answer[0].checked=true;	
+}
+</script>
+<script src="winshow.js"></script>
+<script src="index2.js"></script>
+	
+</body>
+</html>
